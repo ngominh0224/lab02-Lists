@@ -1,5 +1,7 @@
 export const findCharacters = async () => {
-  const res = await fetch('https://last-airbender-api.herokuapp.com/api/v1/characters');
+  const res = await fetch(
+    'https://last-airbender-api.herokuapp.com/api/v1/characters'
+  );
   const characters = await res.json();
 
   return characters.map((characters) => ({
@@ -9,12 +11,14 @@ export const findCharacters = async () => {
     affiliation: characters.affiliation,
     allies: characters.allies,
     enemies: characters.enemies,
-  }))
-}
+  }));
+};
 
 export const findCharactersById = async (id) => {
-  const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`);
+  const res = await fetch(
+    `https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`
+  );
 
   const character = await res.json();
   return character;
-}
+};

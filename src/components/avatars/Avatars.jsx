@@ -17,4 +17,4 @@ Character.propTypes = {
   affiliation: PropTypes.string.isRequired,
 }
 
-export default Villager;
+export default Character;
