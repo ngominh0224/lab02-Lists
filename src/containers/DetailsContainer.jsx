@@ -4,7 +4,7 @@ import { findCharactersById } from '../services/avatarApi';
 
 export default class CharacterDetails extends Component {
   state = {
-    CharacterObject: {},
+    characterObject: {},
     loading: true,
   };
 

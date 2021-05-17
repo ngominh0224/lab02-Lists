@@ -8,11 +8,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={AvatarsContainer} />
-        <Route
-          path="/api/v1/characters/:id"
-          exact
-          component={DetailsContainer}
-        />
+        <Route path="/characters/:id" exact component={DetailsContainer} />
       </Switch>
     </Router>
   );
